@@ -1,4 +1,4 @@
-sudo: false
+ sudo: false
 language: python
 cache:
   directories:
@@ -9,7 +9,7 @@ branches:
 before_install:
 - pip install --upgrade pip setuptools wheel
 after_install:
-- echo "Finish test!"
+- echo "Second run"
 stages:
 - test
 - name: deploy
